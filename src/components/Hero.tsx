@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative bg-gradient-to-r from-primary/5 to-primary/10 overflow-hidden">
+    <div className="relative bg-gradient-to-r from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 overflow-hidden">
       <div className="container mx-auto px-4 py-20 lg:py-32">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left animate-fade-up">
@@ -11,7 +11,7 @@ const Hero = () => {
               Discover Unique Style at{" "}
               <span className="text-primary">Chiflex</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-xl">
+            <p className="text-lg text-muted-foreground mb-8 max-w-xl">
               Shop the latest trends in fashion, electronics, and lifestyle products. Quality meets affordability at Chiflex.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">

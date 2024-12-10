@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="py-16 bg-primary text-white">
+    <section className="py-16 bg-primary dark:bg-primary/90 text-primary-foreground">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-heading font-bold mb-4">
           Join Our Newsletter

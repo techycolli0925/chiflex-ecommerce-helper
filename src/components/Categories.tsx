@@ -4,28 +4,28 @@ const categories = [
   {
     name: "Electronics",
     icon: Smartphone,
-    color: "bg-blue-500",
+    color: "bg-blue-500 dark:bg-blue-600",
   },
   {
     name: "Fashion",
     icon: Shirt,
-    color: "bg-pink-500",
+    color: "bg-pink-500 dark:bg-pink-600",
   },
   {
     name: "Home & Living",
     icon: Home,
-    color: "bg-green-500",
+    color: "bg-green-500 dark:bg-green-600",
   },
   {
     name: "Accessories",
     icon: Watch,
-    color: "bg-purple-500",
+    color: "bg-purple-500 dark:bg-purple-600",
   },
 ];
 
 const Categories = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-heading font-bold text-center mb-12">
           Shop by Category
