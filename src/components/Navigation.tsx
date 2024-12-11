@@ -48,14 +48,14 @@ const Navigation = () => {
               <a href="/" className="text-xl font-heading font-bold text-primary">
                 Chiflex
               </a>
-              <div className="flex items-center gap-6">
-                <button className="hover:text-primary transition-colors">
+              <div className="flex items-center gap-8 px-2">
+                <button className="hover:text-primary transition-colors p-2">
                   <User className="w-5 h-5" />
                 </button>
-                <button className="hover:text-primary transition-colors">
+                <button className="hover:text-primary transition-colors p-2">
                   <ShoppingCart className="w-5 h-5" />
                 </button>
-                <button className="hover:text-primary transition-colors">
+                <button className="hover:text-primary transition-colors p-2">
                   <Menu className="w-5 h-5" />
                 </button>
               </div>
