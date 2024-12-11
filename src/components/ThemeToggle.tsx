@@ -20,7 +20,7 @@ const ThemeToggle = () => {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="fixed top-4 right-4 z-50"
+      className="fixed md:top-4 md:right-4 top-[0.85rem] right-24 z-50 hover:text-primary transition-colors p-2"
     >
       {isDark ? (
         <Sun className="h-5 w-5" />
