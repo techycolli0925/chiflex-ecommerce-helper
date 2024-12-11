@@ -32,15 +32,12 @@ const Navigation = () => {
             <a href="/" className="text-2xl font-heading font-bold text-primary">
               Chiflex
             </a>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
               <button className="hover:text-primary transition-colors">
                 <User className="w-6 h-6" />
               </button>
               <button className="hover:text-primary transition-colors">
                 <ShoppingCart className="w-6 h-6" />
-              </button>
-              <button className="hover:text-primary transition-colors">
-                <Menu className="w-6 h-6" />
               </button>
             </div>
           </div>
@@ -51,7 +48,7 @@ const Navigation = () => {
               <a href="/" className="text-xl font-heading font-bold text-primary">
                 Chiflex
               </a>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-6">
                 <button className="hover:text-primary transition-colors">
                   <User className="w-5 h-5" />
                 </button>
@@ -63,13 +60,19 @@ const Navigation = () => {
                 </button>
               </div>
             </div>
-            <div className="pb-4">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <Input 
-                  placeholder="Search products..." 
-                  className="pl-10"
-                />
+            {/* Mobile Search Bar (appears on scroll) */}
+            <div className={cn(
+              "transform transition-all duration-300",
+              searchVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+            )}>
+              <div className="pb-4">
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                  <Input 
+                    placeholder="Search products..." 
+                    className="pl-10"
+                  />
+                </div>
               </div>
             </div>
           </div>
